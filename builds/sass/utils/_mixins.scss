@@ -1,0 +1,22 @@
+@mixin bgimg($image, $bgpos: center center, $bgsize: auto) {
+  background: url($image);
+  background-repeat: no-repeat;
+  background-position: $bgpos;
+  background-size: $bgsize;
+}
+
+@mixin bgimg2($image) {
+  background: url($image);
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

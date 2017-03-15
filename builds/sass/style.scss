@@ -1,0 +1,40 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Merriweather:300,400');
+@font-face {
+	font-family: 'Puente';
+	src: url('../fonts/PuenteBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Puente-Demi';
+	src: url('../fonts/PuenteDemi.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Puente';
+	src: url('../fonts/PuenteLight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Puente';
+	src: url('../fonts/PuenteMedium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+// utils
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/layout";
+
+// base
+@import "base/base";
+
+// layout
+@import "layout/navbar";
