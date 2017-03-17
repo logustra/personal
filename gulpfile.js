@@ -25,7 +25,7 @@ gulp.task("sass", function() {
 	return gulp.src("builds/sass/**/*.scss")
 	.pipe(sourcemaps.init())
 	.pipe(sass({
-		outputStyle: "compressed"
+		outputStyle: "expanded"
 	}).on("error", sass.logError))
 	.pipe(autoprefixer({
 		browsers : ["last 20 versions"]

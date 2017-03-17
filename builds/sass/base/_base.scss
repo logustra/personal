@@ -1,0 +1,45 @@
+body {
+  min-width: 100%;
+  min-height: 100%;
+  font-family: $fontPrimary;
+}
+
+h2 {
+  font-family: $fontSecondary;
+  font-weight: $bold;
+  letter-spacing: .8px;
+  text-transform: capitalize;
+}
+
+a,
+button {
+
+  &:focus {
+    outline: 0;
+  }// pseudoclass
+}// a
+
+.btn {
+  border: 0;
+}
+
+#progress,
+#progress2,
+#progress3,
+#progress4,
+#progress5,
+#progress6,
+#progress7,
+#progress8,
+#progress9 {
+@include clearfix;
+ height: 8px;
+ position: relative;
+
+ svg {
+   margin: 0;
+   padding: 0;
+   border-radius: 50px;
+ }
+
+}

@@ -1,0 +1,92 @@
+.navbar-default {
+  padding: 25px 0;
+  background: transparent;
+  border: 0;
+  transition: padding .5s;
+  z-index: 500;
+
+  .navbar-brand {
+    font-family: $fontThird;
+    font-size: 3.5rem;
+    font-weight: $bold;
+    color: $white;
+
+    &:focus,
+    &:hover {
+      color: $white;
+    }// pseudoclass
+  }// navbar-brand
+
+  .nav {
+
+    li {
+
+      a {
+        font-size: 1.5rem;
+        color: $white;
+
+        &:hover,
+        &:focus {
+          color: $white;
+        }// pseudoclass
+
+        .or {
+          font-style: $italic;
+        }// or
+
+        .hire {
+          padding: 6px 20px;
+          border-radius: 50px;
+          background: $white;
+          color: $black;
+          transition: background .2s;
+
+          &:hover,
+          &:focus {
+            background: $smoke;
+          }// pseudoclass
+        }// hire
+      }// a
+    }// li
+  }// nav
+}// navbar-default
+
+.scrolled {
+  padding: 15px 0;
+  background: $smoke;
+  box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.75);
+
+  .navbar-brand {
+    color: $black;
+
+    &:focus,
+    &:hover {
+      color: $black;
+    }// pseudoclass
+  }
+
+  .nav {
+
+    li {
+
+      a {
+        color: $black;
+
+        &:hover,
+        &:focus {
+          color: $black;
+        }// pseudoclass
+
+        .hire {
+          background: $black;
+          color: $white;
+
+          &:hover,
+          &:focus {
+            background: darken($white, 50);
+          }// pseudoclass
+        }// hire
+      }// a
+    }// li
+  }// nav
+}// scrolled
