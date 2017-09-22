@@ -1,6 +1,6 @@
 "use strict";
 
-var bar = new ProgressBar.Line(progress, {
+var bar1 = new ProgressBar.Line(progress, {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,
@@ -29,9 +29,7 @@ var bar = new ProgressBar.Line(progress, {
   }
 });
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-var bar = new ProgressBar.Line(progress2, {
+var bar2 = new ProgressBar.Line(progress2, {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,
@@ -60,9 +58,7 @@ var bar = new ProgressBar.Line(progress2, {
   }
 });
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-var bar = new ProgressBar.Line(progress3, {
+var bar3 = new ProgressBar.Line(progress3, {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,
@@ -91,9 +87,7 @@ var bar = new ProgressBar.Line(progress3, {
   }
 });
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-var bar = new ProgressBar.Line(progress4, {
+var bar4 = new ProgressBar.Line(progress4, {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,
@@ -122,9 +116,7 @@ var bar = new ProgressBar.Line(progress4, {
   }
 });
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-var bar = new ProgressBar.Line(progress5, {
+var bar5 = new ProgressBar.Line(progress5, {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,
@@ -153,9 +145,7 @@ var bar = new ProgressBar.Line(progress5, {
   }
 });
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-var bar = new ProgressBar.Line(progress6, {
+var bar6 = new ProgressBar.Line(progress6, {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,
@@ -184,9 +174,7 @@ var bar = new ProgressBar.Line(progress6, {
   }
 });
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-var bar = new ProgressBar.Line(progress7, {
+var bar7 = new ProgressBar.Line(progress7, {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,
@@ -215,9 +203,7 @@ var bar = new ProgressBar.Line(progress7, {
   }
 });
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-var bar = new ProgressBar.Line(progress8, {
+var bar8 = new ProgressBar.Line(progress8, {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,
@@ -246,9 +232,7 @@ var bar = new ProgressBar.Line(progress8, {
   }
 });
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-var bar = new ProgressBar.Line(progress9, {
+var bar9 = new ProgressBar.Line(progress9, {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,
@@ -276,5 +260,3 @@ var bar = new ProgressBar.Line(progress9, {
     bar.setText(Math.round(bar.value() * 86) + ' %');
   }
 });
-
-bar.animate(1.0);  // Number from 0.0 to 1.0

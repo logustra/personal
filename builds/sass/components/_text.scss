@@ -1,0 +1,112 @@
+.text-underline-black {
+  margin: 0;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 11%;
+    height: 2px;
+    border-radius: 50px;
+    margin: 20px 0;
+    background: $black;
+  }// pseudoclass
+}// text-underline-black
+
+.text-underline-white {
+
+  &:after {
+    content: "";
+    display: block;
+    width: 11%;
+    height: 2px;
+    border-radius: 50px;
+    margin: 20px 0;
+    background: $white;
+  }// pseudoclass
+}// text-underline-black
+
+.text-normal {
+  text-transform: normal;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+@include mq(xxsmall) {
+  .text-xxs-left {
+    text-align: left;
+  }
+
+  .text-xxs-center {
+    text-align: center;
+  }
+
+  .text-xxs-right {
+    text-align: right;
+  }
+}
+
+@include mq(xsmall) {
+  .text-xs-left {
+    text-align: left;
+  }
+
+  .text-xs-center {
+    text-align: center;
+  }
+
+  .text-xs-right {
+    text-align: right;
+  }
+}
+
+@include mq(small) {
+  .text-sm-left {
+    text-align: left;
+  }
+
+  .text-sm-center {
+    text-align: center;
+  }
+
+  .text-sm-right {
+    text-align: right;
+  }
+}
+
+@include mq(medium) {
+  .text-md-left {
+    text-align: left;
+  }
+
+  .text-md-center {
+    text-align: center;
+  }
+
+  .text-md-right {
+    text-align: right;
+  }
+}
+
+@include mq(large) {
+  .text-lg-left {
+    text-align: left;
+  }
+
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
+}

@@ -4,8 +4,8 @@
 
 .hero {
   width: 100%;
-  min-height: 655px;
-  @include bgimg("../img/header/write.png", center center, cover);
+  background: url('../img/header/write.png') center center no-repeat;
+  background-size: cover;
 
   h1 {
     padding-top: 300px;
@@ -16,16 +16,6 @@
     letter-spacing: 2px;
     color: $white;
 
-    &:after {
-      content: "";
-      display: block;
-      width: 11%;
-      height: 2px;
-      border-radius: 50px;
-      margin-top: 35px;
-      background: $white;
-    }
-
     span {
       font-family: $fontSecondary;
       font-weight: $light;
@@ -33,47 +23,122 @@
   }// h1
 }// hero
 
+@include mq(xxsmall) {
+  .hero {
+    min-height: 750px;
+  }
+}
+
+@include mq(xsmall) {
+  .hero {
+    min-height: 655px;
+  }
+}
+
 /* ==========================================================================
-   frontend & wordpress
+   My job
    ========================================================================== */
 
-.frontend,
-.wordpress {
-  padding: 100px 0;
+  .myjob {
 
-  .container {
+    .myjob-item {
+      @include clearfix;
+      padding: 100px 0;
 
-    h2 {
+      &:nth-of-type(2n) {
+        background: $smoke;
 
-      &:after {
-        content: "";
-        display: block;
-        width: 11%;
-        height: 2px;
-        border-radius: 50px;
-        margin: 20px 0;
-        background: $black;
-      }// pseudoclass
-    }// heading
+        .col-lg-5 {
+          float: right !important;
+        }
 
-    p {
-      font-size: 1.5rem;
-      color: darken($white, 65);
+        .col-lg-7 {
+          float: left !important;
+        }
+      }
 
-      &:last-of-type {
-        padding-top: 15px;
-      }// pseudoclass
-    }// p
+      @include mq(xxsmall) {
+        .col-lg-7 {
+          margin-top: 35px;
+          text-align: center;
+        }
+      }
 
-    img {
-      padding: 15px 50px;
-    }// img
-  }// container
-}// multiclass
+      @include mq(medium) {
+        .col-lg-7 {
+          margin-top: 0;
+          text-align: left;
+        }
+      }
 
-.wordpress {
-  background: $smoke;
-}
+      @include mq(xxsmall) {
+        h2 {
+
+          &:after {
+            margin: 20px auto;
+          }
+        }
+      }
+
+      @include mq(medium) {
+        h2 {
+
+          &:after {
+            margin: 20px 0;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: darken($white, 65);
+
+        &:last-of-type {
+          padding-top: 15px;
+        }// pseudoclass
+      }// p
+
+      @include mq(xxsmall) {
+        p {
+          padding: 0 10px;
+        }
+      }
+
+      @include mq(xsmall) {
+        p {
+          padding: 0 20px;
+        }
+      }
+
+      @include mq(small) {
+        p {
+          padding: 0 50px;
+        }
+      }
+
+      @include mq(medium) {
+        p {
+          padding: 0;
+        }
+      }
+
+      img {
+        padding: 15px 50px;
+      }// img
+
+      @include mq(medium) {
+        img {
+          margin-top: 40px;
+        }
+      }
+
+      @include mq(large) {
+        img {
+          margin-top: 0;
+        }
+      }
+    }// myjob-item
+  }// myjob
 
 /* ==========================================================================
    aboutme
@@ -88,9 +153,9 @@
   }// multiclass
 
   .details {
-    width: 45%;
     padding: 226.5px 110px;
-    @include bgimg("../img/forest.png", center center, cover);
+    background: url('../img/forest.png') center center no-repeat;
+    background-size: cover;
     text-align: center;
 
     img {
@@ -129,22 +194,35 @@
     }// a
   }// details
 
+  @include mq(xxsmall) {
+    .details {
+      padding: 100px 30px;
+      width: 100%;
+    }// details
+  }
+
+  @include mq(small) {
+    .details {
+      padding: 100px 150px;
+      height: auto;
+    }// details
+  }
+
+  @include mq(medium) {
+    .details {
+      padding: 100px 30px;
+      width: 45% !important;
+      height: 850px;
+    }// details
+  }
+
+  @include mq(large) {
+    .details {
+      padding: 226.5px 90px;
+    }// details
+  }
+
   .skills {
-    width: 55%;
-    padding: 100px 75px;
-
-    h2 {
-
-      &:after {
-        content: "";
-        display: block;
-        width: 11%;
-        height: 2px;
-        border-radius: 50px;
-        margin: 20px 0;
-        background: $black;
-      }// pseudoclass
-    }// heading
 
     h4 {
       margin-top: 35px;
@@ -158,8 +236,25 @@
 
     .progressbar-text {
       font-weight: $bold;
+      top: -17px !important;
     }
   }// skills
+
+  @include mq(xxsmall) {
+    .skills {
+      width: 100%;
+      height: auto;
+      padding: 100px 30px;
+    }// skills
+  }
+
+  @include mq(medium) {
+    .skills {
+      width: 55%;
+      height: 850px;
+      padding: 100px 75px;
+    }// skills
+  }
 }// aboutme
 
 /* ==========================================================================
@@ -170,7 +265,7 @@
   padding: 100px 0;
   background: $smoke;
 
-  .col-xs-6 {
+  .col-sm-6 {
     text-align: center;
 
     h2 {
@@ -188,6 +283,22 @@
     &:first-of-type {
       border-right: 2px solid darken($white, 15);
     }// pseudo class
+
+    @include mq(small) {
+      &:first-of-type {
+        border-right: 2px solid darken($white, 15) !important;
+        border-bottom: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+
+    @include mq(xxsmall) {
+      &:first-of-type {
+        border-right: 0;
+        border-bottom: 2px solid darken($white, 15);
+        padding-bottom: 30px;
+      }
+    }
   }// columns
 }// count
 
@@ -208,37 +319,42 @@
     &:nth-of-type(2n) {
       background: $smoke;
 
-      .frontImg {
+      .container {
 
-        .backImg {
-          background: $white;
-        }// backBackground
-      }// frontImg
+        .col-md-5 {
+          float: right !important;
+
+          .post-image img {
+            box-shadow: 15px 15px 0px 0px rgba(255,255,255,1);
+          }
+        }
+
+        .col-md-7 {
+          float: left !important;
+
+          @include mq(medium) {
+            .post-content {
+              padding-left: 0;
+              padding-right: 50px;
+              margin-top: 0;
+            }
+          }
+
+          @include mq(large) {
+            .post-content {
+              padding-left: 0;
+              padding-right: 125px;
+            }
+          }
+        }
+      }
     }// pseudoclass
 
-    .frontImg {
+    .post-image img {
+      box-shadow: 15px 15px 0px 0px rgba(247,247,247,1);
+    }
 
-      img {
-        position: relative;
-        z-index: 100;
-        max-width: 435px;
-      }// img
-
-      .backImg {
-        content: "";
-        position: relative;
-        width: 431px;
-        height: 287px;
-        margin-top: -270px;
-        margin-left: 22px;
-        background: $smoke;
-        border: 2px solid darken($white, 7);
-        z-index: 50;
-      }// backBackground
-    }// frontImg
-
-    .excerpt {
-      padding: 0 80px;
+    .post-content {
 
       h3 {
         font-size: 2.8rem;
@@ -250,7 +366,7 @@
         margin-top: 25px;
         margin-bottom: 15px;
         font-size: 1.5rem;
-      }
+      }// p
 
       a {
 
@@ -261,8 +377,28 @@
           padding: 6px 15px;
           border-radius: 50px;
         }
+      }// a
+    }// post-content
+
+    @include mq(xxsmall) {
+      .post-content {
+        padding: 0;
+        margin-top: 45px;
       }
-    }// excerpt
+    }
+
+    @include mq(medium) {
+      .post-content {
+        padding-left: 50px;
+        margin-top: 0;
+      }
+    }
+
+    @include mq(large) {
+      .post-content {
+        padding-left: 125px;
+      }
+    }
   }// article
 
   .toggleArticle {

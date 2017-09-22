@@ -1,1 +1,1 @@
-"use strict";$(window).scroll(function(){var r=$(window).scrollTop(),l=$(".navbar-default");r>10?l.addClass("scrolled"):l.removeClass("scrolled")}),$("html").niceScroll({cursorcolor:"#31b7ea",scrollspeed:"80",cursorborder:"1px solid #31b7ea",horizrailenabled:"false",cursorborderradius:"0px",zindex:"1000"});
+"use strict";$(window).scroll(function(){var l=$(window).scrollTop(),s=$(".navbar-default");l>10?s.addClass("scrolled"):s.removeClass("scrolled")});

@@ -1,0 +1,25 @@
+.jqbar.horizontal {
+
+  .bar-label {
+    display: block;
+    font-size: 18px;
+    font-family: $fontPrimary;
+    font-weight: $bold;
+    margin-top: 17px;
+  }
+
+  @include mq(large) {
+
+  }
+
+  .bar-level {
+    margin-right: 0;
+    border-radius: 50px;
+    // width: 87% !important;
+  }
+
+  .bar-percent {
+    position: relative;
+    margin-left: 20px;
+  }
+}

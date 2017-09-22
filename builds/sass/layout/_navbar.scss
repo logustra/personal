@@ -17,44 +17,112 @@
     }// pseudoclass
   }// navbar-brand
 
-  .nav {
+  .navbar-collapse {
+    background: transparent;
 
-    li {
+    .nav {
 
-      a {
-        font-size: 1.5rem;
-        color: $white;
+      li {
 
-        &:hover,
-        &:focus {
+        a {
+          font-size: 1.5rem;
           color: $white;
-        }// pseudoclass
-
-        .or {
-          font-style: $italic;
-        }// or
-
-        .hire {
-          padding: 6px 20px;
-          border-radius: 50px;
-          background: $white;
-          color: $black;
-          transition: background .2s;
 
           &:hover,
           &:focus {
-            background: $smoke;
+            color: $white;
           }// pseudoclass
-        }// hire
-      }// a
-    }// li
-  }// nav
+
+          .or {
+            font-style: $italic;
+          }// or
+
+          .hire {
+            padding: 6px 20px;
+            border-radius: 50px;
+            background: $white;
+            color: $black;
+            transition: background .2s;
+
+            &:hover,
+            &:focus {
+              background: $smoke;
+            }// pseudoclass
+          }// hire
+        }// a
+      }// li
+    }// nav
+  }// navbar-collapse
+
+  @include mq(small) {
+    .navbar-collapse {
+      background: transparent !important;
+
+      .nav {
+
+        li {
+
+          a {
+            color: $white !important;
+
+            &:hover,
+            &:focus {
+              color: $white !important;
+            }// pseudoclass
+
+            .hire {
+              background: $white !important;
+              color: $black !important;
+
+              &:hover,
+              &:focus {
+                background: $smoke !important;
+              }// pseudoclass
+            }// hire
+          }// a
+        }// li
+      }// nav
+    }// navbar-collapse
+  }
+
+
+  @include mq(xxsmall) {
+    .navbar-collapse {
+      background: $smoke;
+
+      .nav {
+
+        li {
+
+          a {
+            color: $black;
+
+            &:hover,
+            &:focus {
+              color: $black;
+            }// pseudoclass
+
+            .hire {
+              background: $black;
+              color: $white;
+
+              &:hover,
+              &:focus {
+                background: darken($white, 50);
+              }// pseudoclass
+            }// hire
+          }// a
+        }// li
+      }// nav
+    }// navbar-collapse
+  }
+
 }// navbar-default
 
 .scrolled {
   padding: 15px 0;
   background: $smoke;
-  box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.75);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 
   .navbar-brand {
     color: $black;
@@ -65,28 +133,30 @@
     }// pseudoclass
   }
 
-  .nav {
+  .navbar-collapse {
+    .nav {
 
-    li {
+      li {
 
-      a {
-        color: $black;
-
-        &:hover,
-        &:focus {
-          color: $black;
-        }// pseudoclass
-
-        .hire {
-          background: $black;
-          color: $white;
+        a {
+          color: $black !important;
 
           &:hover,
           &:focus {
-            background: darken($white, 50);
+            color: $black !important;
           }// pseudoclass
-        }// hire
-      }// a
-    }// li
-  }// nav
+
+          .hire {
+            background: $black !important;
+            color: $white !important;
+
+            &:hover,
+            &:focus {
+              background: darken($white, 50) !important;
+            }// pseudoclass
+          }// hire
+        }// a
+      }// li
+    }// nav
+  }// navbar-collapse
 }// scrolled

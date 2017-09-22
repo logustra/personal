@@ -1,22 +1,25 @@
-// breakpoints
-$xsmall:    375px;
-$small:     480px;
-$medium:    768px;
+$xxsmall:   320px;
+$xsmall:    480px;
+$small:     768px;
+$medium:    992px;
 $large:     1200px;
 
 // media queries
 
-@mixin mq($canvas) {
-  @if $canvas == extrasmall {
+@mixin mq($screenSize) {
+  @if $screenSize == xxsmall {
+   @media only screen and (min-width: $xxsmall) { @content; }
+  }
+  @else if $screenSize == xsmall {
    @media only screen and (min-width: $xsmall) { @content; }
   }
-  @if $canvas == small {
+  @else if $screenSize == small {
    @media only screen and (min-width: $small) { @content; }
   }
-  @else if $canvas == medium {
+  @else if $screenSize == medium {
    @media only screen and (min-width: $medium) { @content; }
   }
-  @else if $canvas == large {
+  @else if $screenSize == large {
    @media only screen and (min-width: $large) { @content; }
   }
 }

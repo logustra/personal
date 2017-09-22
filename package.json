@@ -1,9 +1,9 @@
 {
-  "name": "htmltowordpress",
-  "description": "Lerning Build Theme Wordpress",
+  "name": "imgtohtml",
+  "description": "Convert IMG to HTML",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Logustra/htmltowordpress.git"
+    "url": "https://github.com/Logustra/imgtohtml.git"
   },
   "author": "Faizal Andyka",
   "license": "ISC",
