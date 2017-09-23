@@ -7,7 +7,7 @@ var bar1 = new ProgressBar.Line(progress, {
   color: '#31b7ea',
   trailColor: '#eee',
   trailWidth: 1,
-  svgStyle: {width: '90%', height: '100%'},
+  svgStyle: {width: '80%', height: '100%'},
   text: {
     style: {
       // Text color.
@@ -25,7 +25,7 @@ var bar1 = new ProgressBar.Line(progress, {
   from: {color: '#FFEA82'},
   to: {color: '#ED6A5A'},
   step: (state, bar) => {
-    bar.setText(Math.round(bar.value() * 90) + ' %');
+    bar.setText(Math.round(bar.value() * 80) + ' %');
   }
 });
 
@@ -94,7 +94,7 @@ var bar4 = new ProgressBar.Line(progress4, {
   color: '#31b7ea',
   trailColor: '#eee',
   trailWidth: 1,
-  svgStyle: {width: '80%', height: '100%'},
+  svgStyle: {width: '78%', height: '100%'},
   text: {
     style: {
       // Text color.
@@ -112,7 +112,7 @@ var bar4 = new ProgressBar.Line(progress4, {
   from: {color: '#FFEA82'},
   to: {color: '#ED6A5A'},
   step: (state, bar) => {
-    bar.setText(Math.round(bar.value() * 80) + ' %');
+    bar.setText(Math.round(bar.value() * 78) + ' %');
   }
 });
 
@@ -152,7 +152,7 @@ var bar6 = new ProgressBar.Line(progress6, {
   color: '#31b7ea',
   trailColor: '#eee',
   trailWidth: 1,
-  svgStyle: {width: '90%', height: '100%'},
+  svgStyle: {width: '77%', height: '100%'},
   text: {
     style: {
       // Text color.
@@ -170,7 +170,7 @@ var bar6 = new ProgressBar.Line(progress6, {
   from: {color: '#FFEA82'},
   to: {color: '#ED6A5A'},
   step: (state, bar) => {
-    bar.setText(Math.round(bar.value() * 90) + ' %');
+    bar.setText(Math.round(bar.value() * 77) + ' %');
   }
 });
 

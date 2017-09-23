@@ -1,0 +1,300 @@
+/* ==========================================================================
+   Responsive Front Page
+   ========================================================================== */
+
+   /* ==========================================================================
+      hero
+      ========================================================================== */
+
+   @include mq(xxsmall) {
+     .hero-frontpage {
+       min-height: 780px;
+     }
+   }
+
+   @include mq(xsmall) {
+     .hero-frontpage {
+       min-height: 680px;
+     }
+   }
+
+   /* ==========================================================================
+      My job
+      ========================================================================== */
+
+      @include mq(xxsmall) {
+        .myjob {
+
+          .myjob-item {
+
+            .col-lg-7 {
+              margin-top: 35px;
+              text-align: center;
+
+              h2 {
+
+                &:after {
+                  margin: 20px auto;
+                }
+              }// h2
+
+              p {
+                padding: 0 10px;
+              }// p
+            }// columns
+          }// myjob-item
+        }// myjob
+      }
+
+      @include mq(xsmall) {
+        .myjob {
+
+          .myjob-item {
+
+            .col-lg-7 {
+
+              p {
+                padding: 0 20px;
+              }// p
+            }// columns
+          }// myjob-item
+        }// myjob
+      }
+
+      @include mq(small) {
+        .myjob {
+
+          .myjob-item {
+
+            .col-lg-7 {
+
+              p {
+                padding: 0 50px;
+              }// p
+            }// columns
+          }// myjob-item
+        }// myjob
+      }
+
+      @include mq(medium) {
+        .myjob {
+
+          .myjob-item {
+
+            .col-lg-5 {
+
+              img {
+                margin-top: 40px;
+              }
+            }// columns
+
+            .col-lg-7 {
+              margin-top: 0;
+              text-align: left;
+
+              h2 {
+
+                &:after {
+                  margin: 20px 0;
+                }
+              }// h2
+
+              p {
+                padding: 0;
+              }
+            }// columns
+          }// myjob-item
+        }// myjob
+      }
+
+      @include mq(large) {
+        .myjob {
+
+          .myjob-item {
+
+            .col-lg-5 {
+
+              img {
+                margin-top: 0;
+              }
+            }// columns
+          }// myjob-item
+        }// myjob
+      }
+
+   /* ==========================================================================
+      aboutme
+      ========================================================================== */
+
+      @include mq(xxsmall) {
+        .aboutme {
+
+          .details {
+            padding: 100px 30px;
+            width: 100%;
+          }// details
+
+          .skills {
+            width: 100%;
+            height: auto;
+            padding: 100px 30px;
+          }// skills
+        }// aboutme
+      }
+
+      @include mq(small) {
+        .aboutme {
+
+          .details {
+            padding: 100px 150px;
+            height: auto;
+          }// details
+        }// aboutme
+      }
+
+      @include mq(medium) {
+        .aboutme {
+
+          .details {
+            padding: 100px 30px;
+            width: 45% !important;
+            height: 850px;
+          }// details
+
+          .skills {
+            width: 55%;
+            height: 850px;
+            padding: 100px 75px;
+          }// skills
+        }// aboutme
+      }
+
+      @include mq(large) {
+        .aboutme {
+
+          .details {
+            padding: 226.5px 90px;
+          }// details
+        }// aboutme
+      }
+
+   /* ==========================================================================
+      count
+      ========================================================================== */
+
+      @include mq(xxsmall) {
+        .count {
+
+          .col-sm-6 {
+
+            &:first-of-type {
+              border-right: 0;
+              border-bottom: 2px solid darken($white, 15);
+              padding-bottom: 30px;
+            }
+          }// columns
+        }// count
+      }
+
+      @include mq(small) {
+        .count {
+
+          .col-sm-6 {
+
+            &:first-of-type {
+              border-right: 2px solid darken($white, 15);
+              border-bottom: 0 !important;
+              padding-bottom: 0 !important;
+            }
+          }// columns
+        }// count
+      }
+
+   /* ==========================================================================
+      currentPost
+      ========================================================================== */
+
+      @include mq(xxsmall) {
+        .currentPost {
+
+          article {
+
+            .container {
+
+              .col-md-7 {
+
+                .post-content {
+                  padding: 0;
+                  margin-top: 45px;
+                }// post-content
+              }// columns
+            }// container
+          }// article
+        }// currentPost
+      }
+
+      @include mq(medium) {
+        .currentPost {
+
+          article {
+
+            &:nth-of-type(2n) {
+
+              .container {
+
+                .col-md-7 {
+
+                  .post-content {
+                    padding-left: 0;
+                    padding-right: 50px;
+                    margin-top: 0;
+                  }// post-content
+                }// columns
+              }// container
+            }// pseudoclass
+
+            .container {
+
+              .col-md-7 {
+
+                .post-content {
+                  padding-left: 50px;
+                  margin-top: 0;
+                }// post-content
+              }// columns
+            }// container
+          }// article
+        }// currentPost
+      }
+
+      @include mq(large) {
+        .currentPost {
+
+          article {
+
+            &:nth-of-type(2n) {
+
+              .container {
+
+                .col-md-7 {
+
+                  .post-content {
+                    padding-left: 0;
+                    padding-right: 125px;
+                  }// post-content
+                }// columns
+              }// container
+            }// pseudoclass
+
+            .container {
+
+              .col-md-7 {
+
+                .post-content {
+                  padding-left: 125px;
+                }// post-content
+              }// columns
+            }// container
+          }// article
+        }// currentPost
+      }

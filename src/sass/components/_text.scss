@@ -1,0 +1,42 @@
+.text-underline-black {
+  margin: 0;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 11%;
+    height: 2px;
+    border-radius: 50px;
+    margin: 20px 0;
+    background: $black;
+  }// pseudoclass
+}// text-underline-black
+
+.text-underline-white {
+
+  &:after {
+    content: "";
+    display: block;
+    width: 11%;
+    height: 2px;
+    border-radius: 50px;
+    margin: 20px 0;
+    background: $white;
+  }// pseudoclass
+}// text-underline-black
+
+.text-normal {
+  text-transform: normal;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}

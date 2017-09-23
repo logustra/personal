@@ -9,7 +9,7 @@ var gulp = require("gulp"),
 // minify javaSripts
 gulp.task("uglify", function (cb) {
 	pump([
-			gulp.src("builds/js/main.js"),
+			gulp.src("src/js/*.js"),
 			uglify(),
 			gulp.dest("public/js")
 		],
@@ -22,7 +22,7 @@ gulp.task("uglify", function (cb) {
 // sourcemaps
 // automatic browser prefixing
 gulp.task("sass", function() {
-	return gulp.src("builds/sass/**/*.scss")
+	return gulp.src("src/sass/**/*.scss")
 	.pipe(sourcemaps.init())
 	.pipe(sass({
 		outputStyle: "expanded"
@@ -50,8 +50,8 @@ gulp.task("watch", function() {
 		}
 	});
 	gulp.watch(["*.html"], ["html"]);
-	gulp.watch("builds/sass/**/*.scss", ["sass"]);
-	gulp.watch("builds/js/main.js", ["uglify"]);
+	gulp.watch("src/sass/**/*.scss", ["sass"]);
+	gulp.watch("src/js/*.js", ["uglify"]);
 });
 
 gulp.task("default", ["watch"]);

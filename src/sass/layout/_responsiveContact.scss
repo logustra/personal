@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Responsive Contact
+   ========================================================================== */
+
+   @include mq(xxsmall) {
+     .contact {
+       @include clearfix;
+       min-height: 1300px;
+
+       .container {
+         height: auto;
+
+         .sendEmail {
+           width: 100%;
+
+           textarea {
+             margin-bottom: 100px;
+           }
+         }// sendEmail
+
+         .contactInfo {
+           width: 100%;
+           height: auto;
+
+           .text {
+             margin-bottom: 80px;
+           }
+         }// contactInfo
+       }// container
+     }// contact
+   }
+
+   @include mq(medium) {
+     .contact {
+       @include clearfix;
+       min-height: 700px;
+
+       .container {
+         height: 575px;
+
+         .sendEmail {
+           width: 65%;
+
+           textarea {
+             margin-bottom: 0;
+           }
+         }// sendEmail
+
+         .contactInfo {
+           width: 35%;
+           height: 100%;
+
+           .text {
+             margin-bottom: 0;
+           }
+         }// contactInfo
+       }// container
+     }// contact
+   }

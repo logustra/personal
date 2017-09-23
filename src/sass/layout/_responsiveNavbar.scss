@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Responsice Navbar
+   ========================================================================== */
+
+   @include mq(xxsmall) {
+     .navbar-default {
+
+       .navbar-collapse {
+         background: $smoke;
+
+         .nav {
+
+           li {
+
+             a {
+               color: $black;
+
+               &:hover,
+               &:focus {
+                 color: $black;
+               }// pseudoclass
+
+               .hire {
+                 background: $black;
+                 color: $white;
+
+                 &:hover,
+                 &:focus {
+                   background: darken($white, 50);
+                 }// pseudoclass
+               }// hire
+             }// a
+           }// li
+         }// nav
+       }// navbar-collapse
+     }// navbar-default
+   }
+
+   @include mq(small) {
+     .navbar-default {
+
+       .navbar-collapse {
+         background: transparent;
+
+         .nav {
+
+           li {
+
+             a {
+               color: $white;
+
+               &:hover,
+               &:focus {
+                 color: $white;
+               }// pseudoclass
+
+               .hire {
+                 background: $white;
+                 color: $black;
+
+                 &:hover,
+                 &:focus {
+                   background: $smoke;
+                 }// pseudoclass
+               }// hire
+             }// a
+           }// li
+         }// nav
+       }// navbar-collapse
+     }// navbar-default
+   }

@@ -1,0 +1,56 @@
+/* ==========================================================================
+   footer
+   ========================================================================== */
+
+   footer {
+     padding-top: 100px;
+     background: $smoke;
+     text-align: center;
+
+     h1 {
+       margin: 0;
+       font-family: $fontThird;
+       font-size: 6rem;
+       font-weight: $bold;
+     }// h1
+
+     .socialNetwork {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 40px 0;
+
+       a {
+         text-decoration: none;
+         transition: color .2s;
+
+         &:hover,
+         &:focus {
+           color: $black;
+         }// pseudoclass
+       }// a
+
+       i {
+         padding: 0 10px;
+         font-size: .7rem;
+         color: darken($white, 15);
+       }// i
+     }// socialNetwork
+
+     p {
+       font-style: $italic;
+       color: darken($white, 50);
+       margin-bottom: 15px;
+
+       &:before {
+         display: block;
+         content: "";
+         margin: 0 auto;
+         width: 35%;
+         height: 2px;
+         background: darken($white, 15);
+         border-radius: 50px;
+         margin-bottom: 15px;
+       }// pseudoclass
+     }// p
+   }//footer
