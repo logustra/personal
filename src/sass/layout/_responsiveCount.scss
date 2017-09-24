@@ -1,0 +1,31 @@
+/* ==========================================================================
+   count
+   ========================================================================== */
+
+   @include mq(xxsmall) {
+     .count {
+
+       .col-sm-6 {
+
+         &:first-of-type {
+           border-right: 0;
+           border-bottom: 2px solid darken($white, 15);
+           padding-bottom: 30px;
+         }
+       }// columns
+     }// count
+   }
+
+   @include mq(small) {
+     .count {
+
+       .col-sm-6 {
+
+         &:first-of-type {
+           border-right: 2px solid darken($white, 15);
+           border-bottom: 0 !important;
+           padding-bottom: 0 !important;
+         }
+       }// columns
+     }// count
+   }

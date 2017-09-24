@@ -1,0 +1,28 @@
+/* ==========================================================================
+   count
+   ========================================================================== */
+
+   .count {
+     padding: 100px 0;
+     background: $smoke;
+
+     .col-sm-6 {
+       text-align: center;
+
+       h2 {
+         font-size:10rem;
+       }// h2
+
+       h3 {
+         font-weight: $bold;
+
+         span {
+           font-weight: $light;
+         }// span
+       }// h3
+
+       &:first-of-type {
+         border-right: 2px solid darken($white, 15);
+       }// pseudo class
+     }// columns
+   }// count

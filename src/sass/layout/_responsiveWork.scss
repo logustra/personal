@@ -1,0 +1,63 @@
+/* ==========================================================================
+  Responsive Work
+  ========================================================================== */
+
+  @include mq(xxsmall) {
+    .work-main {
+
+      article {
+
+        .post-content {
+          padding: 50px 60px;
+        }
+      }// article
+    }
+  }
+
+  @include mq(xsmall) {
+    .work-main {
+
+      article {
+
+        .post-content {
+          padding: 75px 60px;
+        }
+      }// article
+    }
+  }
+
+  @include mq(small) {
+    .work-main {
+
+      article {
+
+        .post-content {
+          padding: 100px 60px;
+        }
+      }// article
+    }
+  }
+
+  @include mq(large) {
+    .work-main {
+
+      article {
+
+        .post-content {
+          padding: 120px 60px;
+        }
+      }// article
+    }
+  }
+
+  @include mq(xlarge) {
+    .work-main {
+
+      article {
+
+        .post-content {
+          padding: 145px 60px;
+        }
+      }// article
+    }
+  }

@@ -1,0 +1,17 @@
+.skills {
+
+  h4 {
+    margin-top: 35px;
+    margin-bottom: 0;
+    font-weight: $bold;
+
+    &:first-of-type {
+      margin-top: 50px;
+    }// pseudoclass
+  }// h4
+
+  .progressbar-text {
+    font-weight: $bold;
+    top: -17px !important;
+  }
+}// skills

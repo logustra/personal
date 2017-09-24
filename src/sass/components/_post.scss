@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Post
+   ========================================================================== */
+
+   .post {
+     padding-top: 100px;
+
+     h2 {
+       text-align: center;
+     }// h2
+
+     article {
+       padding: 100px 0;
+
+       &:nth-of-type(2n) {
+         background: $smoke;
+
+         .container {
+
+           .col-md-5 {
+             float: right !important;
+
+             .post-image img {
+               box-shadow: 15px 15px 0px 0px rgba(255,255,255,1);
+             }
+           }
+
+           .col-md-7 {
+             float: left !important;
+
+             .post-content {
+
+               .likebtn {
+
+
+                 a {
+                   position: absolute;
+                   margin-left: 644px;
+                   margin-top: -116px;
+                   background: $white;
+                   padding: 12.1px 15px;
+                   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+                   color: $smoke2;
+                 }//a
+               }// likebtn
+             }// post-content
+           }// columns
+         }// container
+       }// pseudoclass
+
+       .post-image img {
+         box-shadow: -15px 15px 0px 0px rgba(247,247,247,1);
+       }
+
+       .post-content {
+
+         h3 {
+           font-size: 2.8rem;
+           font-weight: $bold;
+           letter-spacing: .8px;
+         }// h3
+
+         .post-details {
+
+           i {
+             display: table-cell;
+             vertical-align: middle;
+             padding: 0 10px;
+             font-size: .7rem;
+           }// i
+         }// post-details
+
+         p {
+           margin-top: 25px;
+           margin-bottom: 15px;
+           font-size: 1.5rem;
+         }// p
+
+         .tags {
+
+           a {
+
+             font-size: 1rem;
+             color: $white;
+             text-decoration: none;
+             padding: 6px 15px;
+             border-radius: 50px;
+             margin-right: 7px;
+           }// a
+         }
+
+         .likebtn {
+
+
+           a {
+             position: absolute;
+             margin-left: -177px;
+             margin-top: -120px;
+             background: $smoke;
+             padding: 12.1px 15px;
+             box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+             border-radius: 50px;
+             color: $smoke2;
+           }//a
+         }// likebtn
+       }// post-content
+     }// article
+
+     .toggleArticle {
+       padding: 25px 0 100px 0;
+       text-align: center;
+       background: $smoke;
+
+       button {
+         padding: 8px 20px;
+         font-size: 1.2rem;
+         border-radius: 50px;
+         letter-spacing: 1px;
+         word-spacing: 1px;
+         background: #ddd;
+         transition: background .2s;
+
+         &:hover,
+         &:focus {
+           background: $white;
+           outline: 0;
+         }// pseudoclass
+       }// button
+     }// toggleArticle
+   }// post

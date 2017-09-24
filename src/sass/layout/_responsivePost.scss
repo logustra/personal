@@ -1,0 +1,176 @@
+/* ==========================================================================
+   post
+   ========================================================================== */
+
+   @include mq(xxsmall) {
+     .post {
+
+       article {
+
+         &:nth-of-type(2n) {
+
+           .container {
+
+             .col-md-7 {
+
+               .post-content {
+
+                 .post-details {
+                    display: inline;
+                 }// post-details
+
+                 .likebtn {
+
+                   a {
+                     display: none;
+                   }//a
+                 }// likebtn
+               }// post-content
+             }// columns
+           }// container
+         }// pseudoclass
+
+         .container {
+
+           .col-md-7 {
+
+             .post-content {
+               padding: 0;
+               margin-top: 45px;
+
+               .post-details {
+                  display: inline;
+               }// post-details
+
+               .likebtn {
+
+                 a {
+                   display: none;
+                 }//a
+               }// likebtn
+             }// post-content
+           }// columns
+         }// container
+       }// article
+     }// post
+   }
+
+   @include mq(small) {
+     .post {
+
+       article {
+
+         &:nth-of-type(2n) {
+
+           .container {
+
+             .col-md-7 {
+
+               .post-content {
+
+                 .post-details {
+                    display: table;
+                 }// post-details
+
+               }// post-content
+             }// columns
+           }// container
+         }// pseudoclass
+
+         .container {
+
+           .col-md-7 {
+
+             .post-content {
+
+               .post-details {
+                  display: table;
+               }// post-details
+
+             }// post-content
+           }// columns
+         }// container
+       }// article
+     }// post
+   }
+
+   @include mq(medium) {
+     .post {
+
+       article {
+
+         &:nth-of-type(2n) {
+
+           .container {
+
+             .col-md-7 {
+
+               .post-content {
+                 padding-left: 0;
+                 padding-right: 50px;
+                 margin-top: 0;
+
+               }// post-content
+             }// columns
+           }// container
+         }// pseudoclass
+
+         .container {
+
+           .col-md-7 {
+
+             .post-content {
+               padding-left: 50px;
+               margin-top: 0;
+             }// post-content
+           }// columns
+         }// container
+       }// article
+     }// post
+   }
+
+   @include mq(large) {
+     .post {
+
+       article {
+
+         &:nth-of-type(2n) {
+
+           .container {
+
+             .col-md-7 {
+
+               .post-content {
+                 padding-left: 0;
+                 padding-right: 125px;
+
+                 .likebtn {
+
+                   a {
+                     display: block;
+                   }//a
+                 }// likebtn
+               }// post-content
+             }// columns
+           }// container
+         }// pseudoclass
+
+         .container {
+
+           .col-md-7 {
+
+             .post-content {
+               padding-left: 125px;
+
+               .likebtn {
+
+                 a {
+                   display: block;
+                 }//a
+               }// likebtn
+             }// post-content
+           }// columns
+         }// container
+       }// article
+     }// post
+   }

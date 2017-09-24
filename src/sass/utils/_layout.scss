@@ -3,6 +3,7 @@ $xsmall:    480px;
 $small:     768px;
 $medium:    992px;
 $large:     1200px;
+$xlarge:    1366px;
 
 // media queries
 
@@ -21,5 +22,8 @@ $large:     1200px;
   }
   @else if $screenSize == large {
    @media only screen and (min-width: $large) { @content; }
+  }
+  @else if $screenSize == xlarge {
+   @media only screen and (min-width: $xlarge) { @content; }
   }
 }

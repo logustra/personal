@@ -1,17 +1,22 @@
 
+// base
+@import "base/typography";
+@import "base/colors";
+
 // utils
 @import "utils/mixins";
 @import "utils/layout";
 @import "utils/helper";
 
-//base
-@import "base/typography";
-@import "base/colors";
+// base
 @import "base/base";
 
 // components
 @import "components/reset";
 @import "components/text";
+@import "components/skills";
+@import "components/count";
+@import "components/post";
 
 // layout
 @import "layout/navbar";
@@ -19,9 +24,14 @@
 
 // pages
 @import "pages/frontpage";
+@import "pages/work";
+@import "pages/blog";
 @import "pages/contact";
 
 // responsive
 @import "layout/responsiveNavbar";
 @import "layout/responsiveFrontPage";
+@import "layout/responsiveCount";
+@import "layout/responsivePost";
+@import "layout/responsiveWork";
 @import "layout/responsiveContact";

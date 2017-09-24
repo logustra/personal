@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+   .hero-blog {
+     min-height: 680px;
+     width: 100%;
+     background: url('../img/header/blog.png') center center no-repeat;
+     background-size: cover;
+     text-align: center;
+
+     h1 {
+       padding-top: 300px;
+       font-size: 4rem;
+       font-weight: $bold;
+       line-height: 50px;
+       word-spacing: 5px;
+       letter-spacing: 2px;
+       color: $white;
+     }// h1
+
+     p {
+       color: $white;
+       font-size: 1.5rem;
+       font-family: $fontSecondary;
+       font-weight: $italic;
+     }
+   }// hero
+
+/* ==========================================================================
+  Author
+  ========================================================================== */
+
+  .author {
+    position: relative;
+    margin-top: -75px;
+
+    img {
+      background: $white;
+      padding: 7px;
+      max-width: 150px;
+      border-radius: 50%;
+      border: 4px solid $smoke;
+    }
+  }
+
+/* ==========================================================================
+  Blog Main
+  ========================================================================== */
+
+  .blog-main {
+
+    .post {
+      padding-top: 0;
+
+      .paginations {
+        display: flex;
+        justify-content: center;
+        margin: 100px 0;
+        list-style: none;
+
+
+        li {
+
+          a {
+            padding: 7px 12px;
+            border: 2px solid $white;
+            border-radius: 0;
+            color: $lightblack;
+            text-decoration: none;
+            margin-right: 5px;
+
+            &:hover {
+              background: $smoke;
+              border-radius: 3px;
+            }
+
+            &:focus {
+              background: $blue;
+              border-radius: 3px;
+              color: $white;
+            }
+
+            i {
+              margin-left: 7px;
+              font-size: 12px;
+            }// i
+          }// a
+        }// li
+
+        li.active {
+
+          a {
+            background: $blue;
+            border-radius: 3px;
+            color: $white;
+          }// a
+        }// li.actice
+      }// paginations
+    }// post
+  }// blog-main
