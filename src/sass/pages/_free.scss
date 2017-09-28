@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+   .hero-free {
+     min-height: 680px;
+     width: 100%;
+     background: url('../img/header/free.png') center center no-repeat;
+     background-size: cover;
+     text-align: center;
+
+     h1 {
+       padding-top: 300px;
+       font-size: 4rem;
+       font-weight: $bold;
+       line-height: 50px;
+       word-spacing: 5px;
+       letter-spacing: 2px;
+       color: $white;
+     }// h1
+
+     p {
+       color: $white;
+       font-size: 1.5rem;
+       font-family: $fontSecondary;
+       font-weight: $italic;
+     }
+   }// hero
+
+  .free-main {
+    background: $smoke;
+
+    .container {
+      padding: 100px 0;
+
+      .listCategory {
+        text-align: center;
+        margin-bottom: 100px;
+
+        a {
+          padding: 6px 12px;
+          margin-right: 7px;
+          border: 2px solid $blue;
+          text-decoration: none;
+          color: $blue;
+          border-radius: 4px;
+          transition: .2s;
+
+          &:hover {
+            background: $blue;
+            color: $white;
+          }
+
+          &:last-of-type {
+            margin: 0;
+          }
+        }
+      }
+
+      .tab-content {
+
+        .col-md-4 {
+
+          figure {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+
+            figcaption {
+              background: $white;
+              padding: 10px;
+
+              h4 {
+                font-weight: $bold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .paginations {
+      display: flex;
+      justify-content: center;
+      margin: 100px 0;
+      list-style: none;
+
+
+      li {
+
+        a {
+          padding: 7px 12px;
+          border: 2px solid $smoke;
+          border-radius: 0;
+          color: $lightblack;
+          text-decoration: none;
+          margin-right: 5px;
+
+          &:hover {
+            background: $white;
+            border-radius: 3px;
+          }
+
+          &:focus {
+            background: $blue;
+            border-radius: 3px;
+            color: $white;
+          }
+
+          i {
+            margin-left: 7px;
+            font-size: 12px;
+          }// i
+        }// a
+      }// li
+
+      li.active {
+
+        a {
+          background: $blue;
+          border-radius: 3px;
+          color: $white;
+        }// a
+      }// li.actice
+    }// paginations
+  }
+
+  .free-footer {
+    background: $white;
+  }

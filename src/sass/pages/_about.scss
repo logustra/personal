@@ -40,12 +40,10 @@
 .about-main {
 
   .full-bio {
-    background: url('../img/forest.png') center center no-repeat;
+    background: $smoke;
     position: relative;
     margin-top: -75px;
     padding: 100px 0;
-    background-size: cover;
-    background-attachment: fixed;
     z-index: 50;
   }
 
