@@ -1,0 +1,215 @@
+.single {
+  background: $smoke;
+
+  /* ==========================================================================
+     Hero
+     ========================================================================== */
+
+     .hero-single {
+       min-height: 680px;
+       width: 100%;
+       background: url('../img/header/single.png') center center no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+       text-align: center;
+
+       h1 {
+         font-weight: $bold;
+         line-height: 50px;
+         word-spacing: 5px;
+         letter-spacing: 2px;
+         color: $white;
+       }// h1
+
+       p {
+         color: $white;
+         font-size: 1.5rem;
+         font-family: $fontSecondary;
+         font-weight: $italic;
+       }
+
+       .post-details {
+
+         i {
+           padding: 0 10px;
+         }
+       }
+     }// hero
+
+  /* ==========================================================================
+    Single Main
+    ========================================================================== */
+
+    .single-main {
+      position: relative;
+      display: block;
+      width: 80%;
+      margin: -110px auto 100px auto;
+      background: $white;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+      .post-details {
+        @include clearfix;
+        border-bottom: 1px solid $smoke2;
+
+        .post-detail {
+
+          img {
+            float: left;
+            max-width: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+
+          p {
+            display: table;
+            float: left;
+            margin-top: 15px;
+            margin-bottom: 0;
+            font-family: $fontSecondary;
+            font-size: 1.5rem;
+
+            strong {
+              letter-spacing: .5px;
+            }
+
+            i {
+              display: table-cell;
+              vertical-align: middle;
+              font-size: .7rem;
+              padding: 0 10px;
+            }
+          }
+        }// post-detail
+      }// post-details
+
+      .post-content {
+        // @include clearfix;
+        padding: 25px 50px;
+
+        img {
+          max-width: 100%;
+        }// img
+      }// post-content
+
+      .category {
+        @include clearfix;
+        padding: 30px 25px 0 25px;
+        border-top: 1px solid $smoke2;
+        border-bottom: 1px solid $smoke2;
+        margin-bottom: 100px;
+
+        ul {
+
+          li {
+            margin-right: 0;
+            margin-bottom: 25px;
+
+            a {
+              margin: 0;
+            }// a
+          }// li
+        }// ul
+      }// category
+
+      .author-post {
+        @include clearfix;
+        background: $smoke;
+        text-align: center;
+        padding: 0 265px 100px 265px;
+
+        img {
+          position: relative;
+          margin-top: -50px;
+          background: $white;
+          max-width: 100px;
+          border-radius: 50%;
+          padding: 7px;
+          border: 3px solid $smoke2;
+        }
+
+        h5 {
+          color: darken($white, 40);
+        }
+
+        h4 {
+          font-family: $fontSecondary;
+          font-weight: $bold;
+          letter-spacing: .7px;
+        }
+
+        p {
+          color: darken($white, 40);
+        }
+      }
+
+      .comments-wrap {
+        padding: 50px;
+
+        .comments {
+
+          h3 {
+            font-family: $fontSecondary;
+            font-weight: $bold;
+            letter-spacing: .2rem;
+            border-bottom: 1px solid $smoke2 !important;
+            padding-bottom: 50px;
+          }// h3
+
+          .comments-list {
+            padding-top: 15px;
+
+            .comment {
+              padding: 15px 0;
+
+              h4 {
+                font-family: $fontSecondary;
+                font-weight: $bold;
+                letter-spacing: .5px;
+
+                small {
+                  margin-left: 5px;
+                  font-family: $fontPrimary;
+                  font-size: 1.2rem;
+                }
+              }
+
+              .comment-body {
+                border-bottom: 1px solid $smoke2;
+              }
+            }
+          }
+        }// comments
+
+        #leave-comment {
+          h3 {
+            padding-top: 50px;
+            padding-bottom: 0;
+            border-bottom: 0 !important;
+          }
+
+          h5 {
+            font-family: $fontSecondary;
+            padding-bottom: 50px;
+          }
+        }
+
+        .col-sm-4 {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+
+        .btn-line {
+          border: 1px solid $blue !important;
+        }
+      }// comments-wrap
+    }// single-main
+
+  /* ==========================================================================
+    Single Footer
+    ========================================================================== */
+
+    .single-footer {
+      background: $white;
+    }// single-footer
+}// single

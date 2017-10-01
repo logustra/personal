@@ -5,6 +5,7 @@
    .hero-frontpage {
      width: 100%;
      background: url('../img/header/home.png') center center no-repeat;
+     background-attachment: fixed;
      background-size: cover;
 
      h1 {
@@ -75,6 +76,7 @@
      .details {
        padding: 226.5px 110px;
        background: url('../img/forest.png') center center no-repeat;
+       background-attachment: fixed;
        background-size: cover;
        text-align: center;
 

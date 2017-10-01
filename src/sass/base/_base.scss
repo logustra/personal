@@ -13,6 +13,18 @@ h2 {
 
 .btn-line {
   border: 2px solid $blue !important;
+  padding: 6px 12px;
+  margin-right: 7px;
+  text-decoration: none !important;
+  background: transparent;
+  color: $blue;
+  border-radius: 4px;
+  transition: .2s;
+
+  &:hover {
+    background: $blue;
+    color: $white;
+  }
 }
 
 a,

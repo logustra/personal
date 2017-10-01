@@ -4,6 +4,7 @@
 
    .hero-contact {
      background: url('../img/header/contact.png') center center no-repeat;
+     background-attachment: fixed;
      background-size: cover;
      min-height: 870px;
      color: $white;

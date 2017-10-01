@@ -1,0 +1,278 @@
+/* ==========================================================================
+   Responsive Single
+   ========================================================================== */
+
+@include mq(xxsmall) {
+  .single {
+
+    /* ==========================================================================
+       Hero
+       ========================================================================== */
+
+       .hero-single {
+
+         h1 {
+          padding: 150px 0 0 0;
+          font-size: 3.5rem;
+         }// h1
+       }// hero
+
+    /* ==========================================================================
+      Single Main
+      ========================================================================== */
+
+      .single-main {
+        width: 100%;
+
+        .post-details {
+
+          .post-detail {
+            @include clearfix;
+            padding: 30px;
+            text-align: center;
+
+            .col-lg-1 {
+              display: none;
+            }
+
+            p {
+              text-align: center;
+              width: 100%;
+              margin-top: 0;
+
+              i {
+                display: inline;
+              }
+            }// p
+          }// post-detail
+        }// post-details
+
+        .post-content {
+          padding: 30px 25px;
+        }// post-content
+
+        .category {
+
+          .col-md-9 {
+            ul {
+              text-align: center;
+
+              li {
+                margin-right: 0;
+                margin-bottom: 25px;
+
+                a {
+                  margin: 0;
+                }// a
+              }// li
+            }// ul
+          }// columns
+
+          .col-md-3 {
+            text-align: center;
+            margin-bottom: 25px;
+          }// columns
+        }// category
+
+        .author-post {
+          padding: 0 25px 50px 25px;
+        }
+
+        .comments-wrap {
+
+          #leave-comment {
+
+            form {
+
+              .col-lg-4 {
+                padding: 0;
+              }// columns
+            }// form
+          }// leave-comment
+        }// comments-wrap
+      }// single-main
+  }// single
+}
+
+@include mq(xsmall) {
+  .single {
+
+    /* ==========================================================================
+       Hero
+       ========================================================================== */
+
+       .hero-single {
+
+         h1 {
+           padding: 185px 0 0 0;
+           font-size: 3.5rem;
+         }// h1
+       }// hero
+
+    /* ==========================================================================
+      Single Main
+      ========================================================================== */
+
+      .single-main {
+        width: 100%;
+
+        .post-content {
+          padding: 30px;
+        }// post-content
+
+        .author-post {
+          padding: 0 50px 50px 50px;
+        }
+      }// single-main
+  }// single
+}
+
+@include mq(small) {
+  .single {
+
+    /* ==========================================================================
+       Hero
+       ========================================================================== */
+
+       .hero-single {
+
+         h1 {
+          padding: 230px 60px 0 60px;
+          font-size: 4rem;
+         }// h1
+       }// hero
+
+    /* ==========================================================================
+      Single Main
+      ========================================================================== */
+
+      .single-main {
+        width: 80%;
+
+        .post-content {
+          padding: 30px 40px;
+        }// post-content
+
+        .author-post {
+          padding: 0 50px 50px 50px;
+        }
+      }// single-main
+  }// single
+}
+
+@include mq(medium) {
+  .single {
+
+    /* ==========================================================================
+       Hero
+       ========================================================================== */
+
+       .hero-single {
+
+         h1 {
+          padding: 230px 100px 0 100px;
+         }// h1
+       }// hero
+
+    /* ==========================================================================
+      Single Main
+      ========================================================================== */
+
+      .single-main {
+
+        .post-content {
+          padding: 30px 50px;
+        }// post-content
+
+        .category {
+
+          .col-md-9 {
+            ul {
+              text-align: left;
+            }// ul
+          }// columns
+
+          .col-md-3 {
+            text-align: right;
+          }// columns
+        }// category
+
+        .author-post {
+          padding: 0 100px 50px 100px;
+        }
+      }// single-main
+  }// single
+}
+
+@include mq(large) {
+  .single {
+
+    /* ==========================================================================
+       Hero
+       ========================================================================== */
+
+       .hero-single {
+
+         h1 {
+          padding: 250px 200px 0 200px;
+         }// h1
+       }// hero
+
+    /* ==========================================================================
+      Single Main
+      ========================================================================== */
+
+      .single-main {
+
+        .author-post {
+          padding: 0 265px 100px 265px;
+        }
+
+        .comments-wrap {
+
+          #leave-comment {
+
+            form {
+
+              .col-lg-4 {
+                padding: 5px;
+              }// columns
+            }// form
+          }// leave-comment
+        }// comments-wrap
+      }// single-main
+  }// single
+}
+
+@include mq(xlarge) {
+  .single {
+
+    /* ==========================================================================
+      Single Main
+      ========================================================================== */
+
+      .single-main {
+
+        .post-details {
+
+          .post-detail {
+            padding: 30px 50px;
+
+            .col-lg-1 {
+              display: inline;
+              padding: 0;
+            }
+
+            .col-lg-11 {
+              padding: 0;
+
+              p {
+                margin-top: 15px;
+                text-align: left;
+              }// p
+            }// columns
+          }// post-detail
+        }// post-details
+      }// single-main
+  }// single
+}

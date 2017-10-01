@@ -2,11 +2,12 @@
   min-height: 680px;
   width: 100%;
   background: url('../img/header/about.png') center center no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   text-align: center;
 
   h1 {
-    padding-top: 300px;
+    padding-top: 280px;
     font-size: 4rem;
     font-weight: $bold;
     line-height: 50px;
