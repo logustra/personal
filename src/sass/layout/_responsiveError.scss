@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Responsive Error Page
+   ========================================================================== */
+
+  @include mq(xxsmall) {
+    .error {
+
+      .container {
+
+        h1 {
+          margin: 0;
+          font-size: 15rem;
+          line-height: 225px;
+        }// h1
+
+        .smile {
+          height: 155px;
+          width: 155px;
+          margin: -150px auto 0 auto;
+        }// smile
+      }// container
+    }// error
+  }
+
+  @include mq(small) {
+    .error {
+
+      .container {
+
+        h1 {
+          margin: 0;
+          font-size: 25rem;
+          line-height: 250px;
+        }// h1
+
+        .smile {
+          height: 260px;
+          width: 260px;
+          margin: -180px auto 0 auto;
+        }// smile
+      }// container
+    }// error
+  }
+
+  @include mq(medium) {
+    .error {
+
+      .container {
+
+        h1 {
+          margin-top: 35px;
+          font-size: 30rem;
+        }// h1
+
+        .smile {
+          height: 315px;
+          width: 315px;
+          margin: -200px auto 0 auto;
+        }// smile
+      }// container
+    }// error
+  }

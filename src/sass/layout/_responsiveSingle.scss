@@ -24,6 +24,18 @@
       .single-main {
         width: 100%;
 
+        .search {
+          width: 80%;
+          margin: -170px auto 0 auto;
+
+          form {
+
+            input {
+              text-align: center;
+            }// input
+          }// form
+        }// search
+
         .post-details {
 
           .post-detail {
@@ -116,6 +128,10 @@
       .single-main {
         width: 100%;
 
+        .search {
+          margin: -195px auto 0 auto;
+        }// search
+
         .post-content {
           padding: 30px;
         }// post-content
@@ -148,6 +164,18 @@
 
       .single-main {
         width: 80%;
+
+        .search {
+          width: auto;
+          margin: -175px auto 0 auto;
+
+          form {
+
+            input {
+              text-align: left;
+            }// input
+          }// form
+        }// search
 
         .post-content {
           padding: 30px 40px;
@@ -214,7 +242,7 @@
        .hero-single {
 
          h1 {
-          padding: 250px 200px 0 200px;
+          padding: 230px 200px 0 200px;
          }// h1
        }// hero
 

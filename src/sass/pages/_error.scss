@@ -1,0 +1,38 @@
+.error {
+
+  .container {
+    text-align: center;
+
+    h1 {
+      position: relative;
+      font-family: $fontThird;
+      font-size: 30rem;
+      font-weight: $bold;
+      margin: 0;
+      line-height: 300px;
+      z-index: 100;
+      color: $blue;
+      margin-top: 50px;
+    }// h1
+
+    .smile {
+      position: relative;
+      width: 315px;
+      height: 315px;
+      background: $white;
+      border-bottom: 10px solid $blue;
+      border-radius: 50%;
+      margin: -265px auto 0 auto;
+      z-index: 50;
+    }// smile
+
+    .back {
+      margin: 35px 0;
+
+      p {
+        font-size: 3rem;
+        font-weight: $light;
+      }// p
+    }// back
+  }// container
+}// error

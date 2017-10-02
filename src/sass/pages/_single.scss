@@ -48,6 +48,16 @@
       background: $white;
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 
+      .search {
+
+        form {
+
+          input {
+            color: $white;
+          }// input
+        }// form
+      }// search
+
       .post-details {
         @include clearfix;
         border-bottom: 1px solid $smoke2;
@@ -84,11 +94,10 @@
       }// post-details
 
       .post-content {
-        // @include clearfix;
         padding: 25px 50px;
 
         img {
-          max-width: 100%;
+          width: 100%;
         }// img
       }// post-content
 

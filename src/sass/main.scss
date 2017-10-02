@@ -17,6 +17,7 @@
 @import "components/skills";
 @import "components/count";
 @import "components/post";
+@import "components/search";
 
 // layout
 @import "layout/navbar";
@@ -30,6 +31,7 @@
 @import "pages/blog";
 @import "pages/contact";
 @import "pages/single";
+@import "pages/error";
 
 // responsive
 @import "layout/responsiveNavbar";
@@ -39,3 +41,4 @@
 @import "layout/responsiveWork";
 @import "layout/responsiveContact";
 @import "layout/responsiveSingle";
+@import "layout/responsiveError";
